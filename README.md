@@ -50,15 +50,15 @@ student_management/
 ### 📸 Project Screenshots
 
 #### 🖥️ Central Dashboard
-![Dashboard](screenshots/01dashboard.png)
+![Dashboard](https://raw.githubusercontent.com/Tareq-AHT/student-registration-system/main/screenshots/01dashboard.png)
 
 #### 📚 Offered Courses & Smart Cart
-![Offered Courses](screenshots/02offered.png)
+![Offered Courses](https://raw.githubusercontent.com/Tareq-AHT/student-registration-system/main/screenshots/02offered.png)
 
 #### 👥 Registered & Enrolled Lists
 | Registered Students | Paid Enrollments |
 | :---: | :---: |
-| ![List](screenshots/03list.png) | ![Enrolled](screenshots/04enrolled.png) |
+| ![List](https://raw.githubusercontent.com/Tareq-AHT/student-registration-system/main/screenshots/03list.png) | ![Enrolled](https://raw.githubusercontent.com/Tareq-AHT/student-registration-system/main/screenshots/04enrolled.png) |
 
 #### 🔐 Admin Access
-![Admin](screenshots/05admin.png)
+![Admin](https://raw.githubusercontent.com/Tareq-AHT/student-registration-system/main/screenshots/05admin.png)
