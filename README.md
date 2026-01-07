@@ -48,19 +48,11 @@ student_management/
 
 ### 📸 Project Screenshots
 
-#### 🖥️ Central Dashboard
-![Dashboard](./screenshots/01dashboard.png)
-
-#### 📚 Offered Courses & Smart Cart
-![Offered Courses](./screenshots/02offered.png)
-
-#### 👥 Registered & Enrolled Lists
-| Registered Students | Paid Enrollments |
-| :---: | :---: |
-| ![List](./screenshots/03list.png) | ![Enrolled](./screenshots/04enrolled.png) |
-
-#### 🔐 Admin Access
-![Admin](./screenshots/05admin.png)
+![Dashboard](screenshots/01dashboard.png)
+![Offered Courses](screenshots/02offered.png)
+![List](screenshots/03list.png)
+![Enrolled](screenshots/04enrolled.png)
+![Admin](screenshots/05admin.png)
 
 
 
