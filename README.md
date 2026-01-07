@@ -56,11 +56,8 @@ student_management/
 
 #### 👥 Registered & Enrolled Lists
 | Registered Students | Paid Enrollments |
-
 | :---: | :---: |
-
 | ![List](./screenshots/03list.png) | ![Enrolled](./screenshots/04enrolled.png) |
-
 
 #### 🔐 Admin Access
 ![Admin](./screenshots/05admin.png)
