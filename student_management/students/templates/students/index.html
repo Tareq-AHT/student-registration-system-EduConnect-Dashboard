@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Central Portal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --dark-blue: #0f0c29;
+            --mid-blue: #302b63;
+            --light-blue: #24243e;
+            --bright-neon: #00ffcc;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+            color: white;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .dashboard-container {
+            text-align: center;
+            width: 90%;
+            max-width: 1000px;
+            padding: 20px;
+        }
+
+        .header h1 {
+            font-size: 40px;
+            letter-spacing: 3px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            text-shadow: 0 0 15px rgba(0, 255, 204, 0.4);
+        }
+
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .menu-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 35px 20px;
+            border-radius: 20px;
+            border: 1px solid rgba(0, 255, 204, 0.2);
+            text-decoration: none;
+            color: white;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            backdrop-filter: blur(10px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-12px);
+            background: rgba(0, 255, 204, 0.1);
+            border-color: var(--bright-neon);
+            box-shadow: 0 15px 35px rgba(0, 255, 204, 0.2);
+        }
+
+        .icon { font-size: 45px; margin-bottom: 15px; }
+        .menu-card h3 { margin: 10px 0; font-size: 20px; color: var(--bright-neon); }
+        .menu-card p { font-size: 13px; opacity: 0.7; line-height: 1.5; }
+
+        .admin-card { border-color: #ff3e3e; background: rgba(255, 62, 62, 0.05); }
+        .admin-card h3 { color: #ff3e3e; }
+        .admin-card:hover { border-color: #ff3e3e; background: rgba(255, 62, 62, 0.15); box-shadow: 0 15px 35px rgba(255, 62, 62, 0.2); }
+    </style>
+</head>
+<body>
+
+<div class="dashboard-container">
+    <div class="header">
+        <h1>Edu-Connect <span style="color: var(--bright-neon);">Dashboard</span></h1>
+        <p style="opacity: 0.8;">Make your future more dynamic</p>
+    </div>
+
+    <div class="menu-grid">
+        <a href="/register/" class="menu-card">
+            <div class="icon">📝</div>
+            <h3>Student Registration</h3>
+            <p>Enroll new students into the system with full details.</p>
+        </a>
+
+        <a href="/enrollment/" class="menu-card">
+            <div class="icon">📚</div>
+            <h3>Offered Courses</h3>
+            <p>Explore our premium courses and purchase securely.</p>
+        </a>
+
+        <a href="/list/" class="menu-card">
+            <div class="icon">👥</div>
+            <h3>Registered List</h3>
+            <p>Quick access to all students registered in the database.</p>
+        </a>
+
+        <a href="/enrolled-list/" class="menu-card">
+            <div class="icon">✅</div>
+            <h3>Enrolled Students</h3>
+            <p>View students who have successfully purchased courses.</p>
+        </a>
+
+        <a href="/admin/" class="menu-card admin-card">
+            <div class="icon">🔐</div>
+            <h3>Official Login</h3>
+            <p>Backend management and database administration.</p>
+        </a>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Enrolled Students List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Poppins', sans-serif; background: #1a1a2e; color: white; padding: 40px; }
+        .table-container { background: rgba(255,255,255,0.05); padding: 20px; border-radius: 15px; border: 1px solid rgba(255,255,255,0.1); margin-top: 30px;}
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; background: rgba(0,0,0,0.3); }
+        th, td { border: 1px solid rgba(255,255,255,0.1); padding: 15px; text-align: center; }
+        th { background: #00bcd4; color: white; font-weight: 600; }
+        tr:nth-child(even) { background: rgba(255,255,255,0.02); }
+        tr:hover { background: rgba(0, 210, 255, 0.1); }
+        h2 { color: #00ffcc; text-align: center; letter-spacing: 1px; }
+        .btn { display: inline-block; margin-top: 20px; color: #00d2ff; text-decoration: none; border: 1px solid #00d2ff; padding: 10px 20px; border-radius: 5px; transition: 0.3s; }
+        .btn:hover { background: #00d2ff; color: #1a1a2e; }
+        .back-link { position: absolute; top: 20px; left: 20px; color: #00ffcc; text-decoration: none; font-size: 14px; }
+        
+        /* কোর্সের কলাম বামে রাখার জন্য বিশেষ স্টাইল */
+        .left-align { text-align: left !important; }
+    </style>
+</head>
+<body>
+
+    <a href="/" class="back-link">← Back to Dashboard</a>
+
+    <div class="table-container">
+        <h2>✅ Enrolled Students (Full Details)</h2>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Courses</th>
+                    <th>Payment</th>
+                    <th>Total Paid</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for entry in enrolled_data %}
+                <tr>
+                    <td>{{ entry.student_name }}</td>
+                    <td class="left-align">{{ entry.courses }}</td>
+                    <td>{{ entry.payment_method|title }}</td>
+                    <td>{{ entry.total_amount }} TK</td>
+                    <td>{{ entry.timestamp|date:"d M Y" }}</td> 
+                    <td>{{ entry.timestamp|time:"H:i" }}</td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="6" style="text-align: center; color: #ff3e3e;">No enrollments found yet.</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <div style="margin-top: 20px;">
+            <a href="/enrollment/" class="btn">Add New Enrollment</a>
+            <a href="/list/" class="btn" style="border-color: #00ff88; color: #00ff88; margin-left: 10px;">View Registered List</a>
+        </div>
+    </div>
+
+</body>
+</html>
